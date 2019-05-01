@@ -1,26 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CurrList from "./CurrList";
+import AmountInput from "./AmountInput";
+import AddButton from "./AddButton";
+import NewConverter from "./NewConverter";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    count: 0
+  };
+
+  addConverter = () => {
+    let converters = [];
+
+    for (let i = 0; i < this.state.count; i++) {
+      converters.push(<NewConverter />);
+    }
+
+    return converters;
+  };
+
+  render() {
+    return (
+      <div>
+        <NewConverter />
+
+        <div>{this.addConverter()}</div>
+        <div>
+          <AddButton
+            value="Add Converter"
+            theme="add-button"
+            onAdd={() => {
+              this.setState({
+                count: this.state.count + 1
+              });
+            }}
+          />
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
