@@ -8,11 +8,28 @@ select {
   height: 50px;
   width: 250px;
   font-size: 20px;
-  margin: 20px 60px;
+  margin: 20px;
 }
 
 .add-button {
+  margin: 20px;
   background-color: red;
+  height: 50px;
+  width: 120px;
+  font-size: 15px;
+}
+
+.reset-button {
+  margin: 20px;
+  background-color: yellow;
+  height: 50px;
+  width: 120px;
+  font-size: 15px;
+}
+
+.delete-button {
+  margin: 20px;
+  background-color: green;
   height: 50px;
   width: 120px;
   font-size: 15px;

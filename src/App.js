@@ -6,14 +6,14 @@ import NewConverter from "./NewConverter";
 
 class App extends React.Component {
   state = {
-    count: 0
+    count: 1
   };
 
   addConverter = () => {
     let converters = [];
 
     for (let i = 0; i < this.state.count; i++) {
-      converters.push(<NewConverter />);
+      converters.push(<NewConverter key={i} />);
     }
 
     return converters;
@@ -22,8 +22,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <NewConverter />
-
         <div>{this.addConverter()}</div>
         <div>
           <AddButton
@@ -32,6 +30,18 @@ class App extends React.Component {
             onAdd={() => {
               this.setState({
                 count: this.state.count + 1
+              });
+            }}
+          />
+        </div>
+
+        <div>
+          <AddButton
+            value="Delete Converter"
+            theme="delete-button"
+            onAdd={() => {
+              this.setState({
+                count: this.state.count - 1
               });
             }}
           />
