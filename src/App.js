@@ -1,6 +1,4 @@
 import React from "react";
-import CurrList from "./CurrList";
-import AmountInput from "./AmountInput";
 import AddButton from "./AddButton";
 import NewConverter from "./NewConverter";
 
