@@ -28,7 +28,7 @@ header {
 .app-title {
   font-size: 30px;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid #c0c0c0;
   margin: 30px;
   padding: 5px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
