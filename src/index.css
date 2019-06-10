@@ -12,6 +12,19 @@ select {
   margin: 20px;
 }
 
+header {
+  width: 100%;
+}
+
+.main-div {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .app-title {
   font-size: 30px;
   text-align: center;
@@ -22,13 +35,8 @@ select {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.main-div {
-  width: 1200px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.converter-item {
+  margin-top: 30px;
 }
 
 .add-button {

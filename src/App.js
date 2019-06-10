@@ -20,7 +20,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="main-div">
-        <div className="app-title">My R€act Converter($)</div>{" "}
+        <header>
+          <div className="app-title">My R€act Converter($)</div>
+        </header>{" "}
         <div>{this.addConverter()}</div>
         <div>
           <AddButton

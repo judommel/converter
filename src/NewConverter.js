@@ -25,7 +25,7 @@ class NewConverter extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="converter-item">
         <AmountInput
           value={this.state.cashIn}
           onNewValue={event => {
