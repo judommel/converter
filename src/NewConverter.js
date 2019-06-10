@@ -26,7 +26,6 @@ class NewConverter extends React.Component {
   render() {
     return (
       <div>
-        {" "}
         <AmountInput
           value={this.state.cashIn}
           onNewValue={event => {
@@ -39,8 +38,8 @@ class NewConverter extends React.Component {
               }
             );
           }}
-        />{" "}
-        =
+        />
+        {" = "}
         <AmountInput
           value={this.state.cashOut}
           onNewValue={event => {
@@ -71,7 +70,12 @@ class NewConverter extends React.Component {
             }}
           />{" "}
           <AddButton
-            value="Reset"
+            value={
+              <span>
+                <i class="fas fa-sync-alt" />
+                {"  Reset"}
+              </span>
+            }
             theme="reset-button"
             onAdd={() => {
               this.setState({

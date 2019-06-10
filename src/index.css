@@ -2,6 +2,7 @@ input {
   height: 60px;
   width: 350px;
   font-size: 24px;
+  border-radius: 10px;
 }
 
 select {
@@ -11,26 +12,54 @@ select {
   margin: 20px;
 }
 
+.app-title {
+  font-size: 30px;
+  text-align: center;
+  border: 2px solid black;
+  margin: 30px;
+  padding: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.main-div {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .add-button {
   margin: 20px;
-  background-color: red;
-  height: 50px;
-  width: 120px;
+  background-color: #6ac259;
+  height: 30px;
+  width: 150px;
   font-size: 15px;
+  border-radius: 20px;
+  color: #ffffff;
+  border: none;
 }
 
 .reset-button {
   margin: 20px;
-  background-color: yellow;
-  height: 50px;
-  width: 120px;
+  background-color: #5acdbd;
+  height: 40px;
+  width: 100px;
   font-size: 15px;
+  border-radius: 20px;
+  color: #ffffff;
+  border: none;
 }
 
 .delete-button {
   margin: 20px;
-  background-color: green;
-  height: 50px;
-  width: 120px;
+  background-color: #e84e2e;
+  height: 30px;
+  width: 150px;
   font-size: 15px;
+  border-radius: 20px;
+  color: #ffffff;
+  border: none;
 }

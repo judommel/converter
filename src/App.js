@@ -21,11 +21,17 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="main-div">
+        <div className="app-title">My R€act Converter($)</div>{" "}
         <div>{this.addConverter()}</div>
         <div>
           <AddButton
-            value="Add Converter"
+            value={
+              <span>
+                <i class="fas fa-plus-circle" />
+                {"  Add Converter"}
+              </span>
+            }
             theme="add-button"
             onAdd={() => {
               this.setState({
@@ -34,10 +40,14 @@ class App extends React.Component {
             }}
           />
         </div>
-
         <div>
           <AddButton
-            value="Delete Converter"
+            value={
+              <span>
+                <i class="fas fa-minus-circle" />
+                {"  Delete Converter"}
+              </span>
+            }
             theme="delete-button"
             onAdd={() => {
               this.setState({
